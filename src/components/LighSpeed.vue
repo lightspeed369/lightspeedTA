@@ -295,18 +295,55 @@ export default {
     e6: 1,
     e7: [],
   }),
+  // Max note:
+  // I used a new "models" JSON to integrate multiple original data source,
+  // now map to the original data definition to fit the existing code.
+  computed: {
+    carmake() {
+      return Object.keys(this.models);
+    },
+    model() {
+      let model = {};
+      for (let make in this.models) {
+        if (!model[make]) {
+          model[make] = [];
+        }
+        model[make].push(...Object.keys(this.models[make]));
+      }
+      return model;
+    },
+    // deprecated, query with this.models[make].baseClass instead
+    classLookupTable() {
+      return {};
+    },
+    // deprecated, query with this.models[make].baseClass instead
+    oneStarModel() {
+      return [];
+    },
+    // deprecated, query with this.models[make].baseClass instead
+    twoStarModel() {
+      return [];
+    },
+  },
   methods: {
     calculateScore() {
       console.log(this.carspec);
 
-      // Look up if model needs extra points penalty
-      if (this.oneStarModel.includes(this.carspec.model)) {
-        this.score += 7;
-      }
+      // always reset
+      this.score = 0;
 
-      if (this.twoStarModel.includes(this.carspec.model)) {
-        this.score += 14;
-      }
+      // Look up if model needs extra points penalty
+      // if (this.oneStarModel.includes(this.carspec.model)) {
+      //   this.score += 7;
+      // }
+      // if (this.twoStarModel.includes(this.carspec.model)) {
+      //   this.score += 14;
+      // }
+      let baseClass =
+        this.models[this.carspec.make][this.carspec.model].baseClass;
+      let startCount = (baseClass.match(/\*/g) || []).length;
+
+      this.score += startCount * 7;
 
       // Adding engine
       this.carspec.engine.forEach((element) => {
@@ -318,7 +355,7 @@ export default {
         this.score += this.scoreLookupTable.drivetrain[element];
       });
 
-      //Adding suspension
+      // Adding suspension
       this.carspec.suspension.forEach((element) => {
         this.score += this.scoreLookupTable.suspension[element];
       });
@@ -333,23 +370,25 @@ export default {
         this.score += this.scoreLookupTable.areo[element];
       });
 
-      //Adding tires
+      // Adding tires
       this.carspec.tires.forEach((element) => {
         this.score += this.scoreLookupTable.tires[element];
       });
 
-      //Adding weight
+      // Adding weight
       this.carspec.weight.forEach((element) => {
         this.score += this.scoreLookupTable.weight[element];
       });
 
-      //Getting base car class
-      this.carclass = this.classLookupTable[this.carspec.model];
-      //Getting final car class
+      // Getting base car class
+      // this.carclass = this.classLookupTable[this.carspec.model];
+      this.carclass = baseClass.replace(/\*/g, "");
+
+      // Getting final car class
       var totalscore = this.score + this.classesScore[this.carclass];
       var level = parseInt(totalscore / 20);
-      if (level > 5) {
-        this.finalclass = "TTSU";
+      if (level > 7) {
+        this.finalclass = "TTX";
       } else {
         this.finalclass = this.classes[level];
       }
