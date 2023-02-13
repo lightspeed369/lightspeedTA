@@ -73,6 +73,7 @@
               solo
             ></v-select>
           </v-col>
+          <v-btn color="secondary" @click="e6 = 1"> Back </v-btn>
           <v-btn color="primary" @click="e6 = 3"> Continue </v-btn>
         </v-stepper-content>
 
@@ -192,6 +193,7 @@
               ></v-select>
             </v-col>
           </v-row>
+          <v-btn color="secondary" @click="e6 = 2"> Back </v-btn>
           <v-btn
             color="primary"
             @click="
@@ -235,6 +237,7 @@
             <template v-slot:activator="{ on, attrs }">
               <v-btn @click="reloadPage" text> Reset </v-btn>
               <v-btn color="primary" v-bind="attrs" v-on="on">View Score</v-btn>
+              <v-btn color="secondary" @click="e6 = 3"> Back </v-btn>
             </template>
             <template v-slot:default="dialog">
               <v-card>
@@ -1120,5 +1123,8 @@ export default {
   margin: 1.2rem;
   padding: 1rem;
   border-radius: 1.2rem;
+}
+.v-btn {
+  margin: 0 1rem 0 0;
 }
 </style>
