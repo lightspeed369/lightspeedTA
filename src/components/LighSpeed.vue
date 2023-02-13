@@ -194,15 +194,7 @@
             </v-col>
           </v-row>
           <v-btn color="secondary" @click="e6 = 2"> Back </v-btn>
-          <v-btn
-            color="primary"
-            @click="
-              calculateScore();
-              e6 = 4;
-            "
-          >
-            Continue
-          </v-btn>
+          <v-btn color="primary" @click="e6 = 4"> Continue </v-btn>
         </v-stepper-content>
 
         <v-stepper-step step="4"> View Your Results </v-stepper-step>
@@ -233,10 +225,26 @@
             the total number of Modification Points to determine the final
             competition class.
           </v-banner>
+          <v-radio-group
+            inline
+            :class="carspec.nafi == '' ? 'red-label' : ''"
+            label="* Is your vehicle NA or FI?"
+            v-model="carspec.nafi"
+          >
+            <v-radio label="NA" value="NA"></v-radio>
+            <v-radio label="FI" value="FI"></v-radio>
+          </v-radio-group>
           <v-dialog transition="dialog-top-transition" max-width="600">
             <template v-slot:activator="{ on, attrs }">
               <v-btn @click="reloadPage" text> Reset </v-btn>
-              <v-btn color="primary" v-bind="attrs" v-on="on">View Score</v-btn>
+              <v-btn
+                color="primary"
+                v-bind="attrs"
+                v-on="on"
+                @click="calculateScore"
+                :disabled="carspec.nafi == ''"
+                >View Score</v-btn
+              >
               <v-btn color="secondary" @click="e6 = 3"> Back </v-btn>
             </template>
             <template v-slot:default="dialog">
@@ -288,6 +296,7 @@ export default {
       areo: [],
       tires: [],
       weight: [],
+      nafi: "",
     },
     score: 0,
     carclass: null,
@@ -344,6 +353,11 @@ export default {
       let startCount = (baseClass.match(/\*/g) || []).length;
 
       this.score += startCount * 7;
+
+      // Check NA or FI
+      if (this.carspec.nafi == "FI") {
+        this.score += 5;
+      }
 
       // Adding engine
       this.carspec.engine.forEach((element) => {
@@ -415,5 +429,8 @@ export default {
 }
 .v-btn {
   margin: 0 1rem 0 0;
+}
+.red-label legend.v-label {
+  color: red;
 }
 </style>
