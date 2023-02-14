@@ -179,8 +179,8 @@
                   <v-checkbox
                     inline
                     :input-value="carspec.tires.includes(item)"
-                    class="mr-2"
-                    :label="item"
+                    class="tire-item-template-checkbox"
+                    :label="`${item} (${scoreLookupTable.tires[item]})`"
                     :messages="
                       item == 'SUPER 200TW'
                         ? 'SUPER 200TW LIST: CR1/S, RT660, A052, SUR4G, V730, Rival S1.5, RE71-R/RS, GY SC3, Continental ECF, Dir ZIII, 494RS-RR, Michelin cup2 connect.'
@@ -447,10 +447,12 @@ export default {
 .red-label legend.v-label {
   color: red;
 }
-.tire-description {
-  font-size: 0.8rem;
-  color: #666;
-  width: 100%;
+.tire-item-template-checkbox label {
+  color: rgba(0, 0, 0, 0.87) !important;
+  margin: 0 0 0 1.5rem;
+}
+.tire-item-template-checkbox .v-messages {
+  margin: 0 0 0 3.5rem;
 }
 .v-list-item {
   flex-wrap: wrap;
