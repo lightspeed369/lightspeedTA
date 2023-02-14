@@ -174,6 +174,20 @@
                 chips
                 hint="Cheater Tires"
                 persistent-hint
+              >
+                <template v-slot:item="{ item }">
+                  <v-checkbox
+                    inline
+                    :input-value="carspec.tires.includes(item)"
+                    class="mr-2"
+                    :label="item"
+                    :messages="
+                      item == 'SUPER 200TW'
+                        ? 'SUPER 200TW LIST: CR1/S, RT660, A052, SUR4G, V730, Rival S1.5, RE71-R/RS, GY SC3, Continental ECF, Dir ZIII, 494RS-RR, Michelin cup2 connect.'
+                        : ''
+                    "
+                  >
+                  </v-checkbox></template
               ></v-select>
             </v-col>
 
@@ -432,5 +446,16 @@ export default {
 }
 .red-label legend.v-label {
   color: red;
+}
+.tire-description {
+  font-size: 0.8rem;
+  color: #666;
+  width: 100%;
+}
+.v-list-item {
+  flex-wrap: wrap;
+}
+.display-none {
+  display: none;
 }
 </style>

@@ -336,15 +336,10 @@
     "Add a non-OEM hardtop to a convertible that is not the identical shape and size of either the OEM or OEM option hardtop for that car model (5)"
   ],
   "tires": [
-    "The following DOT-approved R-compound tires: BFG R1S, Goodyear Eagle RS AC (auto- cross), Hoosier A7, Hankook Z214 (C90 & C91 compounds only), Hoosier Wet DOT (22)",
-    "The following DOT-approved R-compound tires and those with a UTQG treadwear rating of 40 or less not listed otherwise in these rules: BFG R1, Goodyear Eagle RS (10)",
-    "Hankook Z214, Hoosier R7, Kumho V710, Yokohama A055 (10)",
-    "BFGoodrich g-Force Rival, Cooper RS3-R, Maxxis Victra RC-1, Michelin Pilot Sport 4S (6)",
-    " Nankang AR-1, Nitto NT01, Toyo Proxes R888/R888R/RA-1/RR (6)",
-    "Bridgestone Potenza RE-71R/RE-71RS, BFGoodrich g-Force Rival S, Continental ExtremeContact Force, Dunlop Direzza ZII (3)",
-    "Falken Azenis RT615K+, Falken Azenis RT660, Maxxis Victra VR-1, Federa 595 RS-RR (3)",
-    "Goodyear Eagle F1 SuperCar 3, Hankook Ventus RS4, Kumho ECSTA V720/V730, Michelin Sport Cup 2 Connect (3)",
-    "Nankang CR-S/NS-2R, Nexen Nfera SUR4G, Yokohama Advan AD09/A052, Valino VR08GP, Toyo Proxes R1R (3)"
+    "200TW+ NOT INCLUDING SUPER 200 TW LIST",
+    "SUPER 200TW",
+    "41TW - 180TW",
+    "Dot/Non-Dot Slicks"
   ],
   "weight": [
     "5 lbs (1)",
@@ -489,15 +484,10 @@
       "Add a non-OEM hardtop to a convertible that is not the identical shape and size of either the OEM or OEM option hardtop for that car model (5)": 5
     },
     "tires": {
-      "The following DOT-approved R-compound tires: BFG R1S, Goodyear Eagle RS AC (auto- cross), Hoosier A7, Hankook Z214 (C90 & C91 compounds only), Hoosier Wet DOT (22)": 22,
-      "The following DOT-approved R-compound tires and those with a UTQG treadwear rating of 40 or less not listed otherwise in these rules: BFG R1, Goodyear Eagle RS (10)": 10,
-      "Hankook Z214, Hoosier R7, Kumho V710, Yokohama A055 (10)": 10,
-      "BFGoodrich g-Force Rival, Cooper RS3-R, Maxxis Victra RC-1, Michelin Pilot Sport 4S (6)": 6,
-      " Nankang AR-1, Nitto NT01, Toyo Proxes R888/R888R/RA-1/RR (6)": 6,
-      "Bridgestone Potenza RE-71R/RE-71RS, BFGoodrich g-Force Rival S, Continental ExtremeContact Force, Dunlop Direzza ZII (3)": 3,
-      "Falken Azenis RT615K+, Falken Azenis RT660, Maxxis Victra VR-1, Federa 595 RS-RR (3)": 3,
-      "Goodyear Eagle F1 SuperCar 3, Hankook Ventus RS4, Kumho ECSTA V720/V730, Michelin Sport Cup 2 Connect (3)": 3,
-      "Nankang CR-S/NS-2R, Nexen Nfera SUR4G, Yokohama Advan AD09/A052, Valino VR08GP, Toyo Proxes R1R (3)": 3
+      "200TW+ NOT INCLUDING SUPER 200 TW LIST": 0,
+      "SUPER 200TW": 4,
+      "41TW - 180TW": 10,
+      "Dot/Non-Dot Slicks": 22
     },
     "weight": {
       "5 lbs (1)": 1,
