@@ -264,15 +264,15 @@
             <template v-slot:default="dialog">
               <v-card>
                 <v-toolbar color="primary" dark>Opening from the top</v-toolbar>
-                <v-card-text>
-                  <div class="text-h2 pa-12">Base class: {{ carclass }}</div>
-                  <div class="text-h2 pa-12">
+                <v-card-text class="score-panel">
+                  <div class="base-class">Base class: {{ carclass }}</div>
+                  <div class="modification-score">
                     Modification point: {{ score }}
                   </div>
-                  <div class="text-h2 pa-12">
+                  <div class="calculated-score">
                     Calculated class: {{ finalclass }}
                   </div>
-                  <div class="text-h4 pa-12">
+                  <div class="challenge">
                     <a
                       href="https://lightspeed.motorsportreg.com/"
                       target="_blank"
@@ -434,6 +434,12 @@ export default {
 </script>
 
 <style>
+.display-none {
+  display: none;
+}
+.v-list-item__title {
+  white-space: inherit !important;
+}
 .select-box {
   background-color: black;
   color: rgb(36, 224, 99);
@@ -457,7 +463,7 @@ export default {
 .v-list-item {
   flex-wrap: wrap;
 }
-.display-none {
-  display: none;
+.score-panel div {
+  margin: 2rem;
 }
 </style>
