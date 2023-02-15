@@ -1,3 +1,5 @@
+(($) => $.config = (
+// the following json goes into LightSpeed.vue.data
 {
   "__carmake": ["deprecated_replaced_by_models"],
   "__model": { "deprecated_replaced_by_models": null },
@@ -526,4 +528,4 @@
       "500 lbs (34)": 34
     }
   }
-}
+}))(window);
