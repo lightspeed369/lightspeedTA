@@ -293,12 +293,11 @@
 </template>
 
 <script>
-import config from "./config.json";
 export default {
   name: "HelloWorld",
   data: () => ({
     // consts
-    ...config,
+    ...window.config,
     // app state
     carspec: {
       make: "",

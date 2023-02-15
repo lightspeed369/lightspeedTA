@@ -22,3 +22,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Deploy to github
+remove dist folder from .gitignore, then:
+```
+git add dist
+git subtree push --prefix dist origin gh-pages
+```
