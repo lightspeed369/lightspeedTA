@@ -263,7 +263,9 @@
             </template>
             <template v-slot:default="dialog">
               <v-card>
-                <v-toolbar color="primary" dark>Opening from the top</v-toolbar>
+                <v-toolbar color="primary" dark
+                  >View your score and join the challenge</v-toolbar
+                >
                 <v-card-text class="score-panel">
                   <div class="base-class">Base class: {{ carclass }}</div>
                   <div class="modification-score">
@@ -273,11 +275,50 @@
                     Calculated class: {{ finalclass }}
                   </div>
                   <div class="challenge">
-                    <a
-                      href="https://lightspeed.motorsportreg.com/"
-                      target="_blank"
-                      >Join the Challenge</a
-                    >
+                    <hr />
+                    <p>Submit your modification info and join the challenge.</p>
+                    <form @submit.prevent="joinChallenge">
+                      <div class="form-group">
+                        <label for="submit-email">Email</label>
+                        <input
+                          id="submit-email"
+                          type="email"
+                          v-model="email"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="submit-firstname">First Name</label>
+                        <input
+                          id="submit-firstname"
+                          type="text"
+                          v-model="firstName"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="submit-lastname">Last Name</label>
+                        <input
+                          id="submit-lastname"
+                          type="text"
+                          v-model="lastName"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="submit-carnumber">Car Number</label>
+                        <input
+                          id="submit-carnumber"
+                          type="text"
+                          v-model="carnumber"
+                          required
+                        />
+                      </div>
+                      <br />
+                      <v-btn type="submit" color="primary"
+                        >Join the Challenge</v-btn
+                      >
+                    </form>
                   </div>
                 </v-card-text>
                 <v-card-actions class="justify-end">
@@ -289,6 +330,96 @@
         </v-stepper-content>
       </v-stepper>
     </div>
+    <form
+      id="googleform"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSfrxF4fbhj1-6i8ZetEW8y8bZaJ1z_tpyOXNjHbEKwQib2i7A/formResponse"
+      method="POST"
+      @submit.prevent="submitGoogleForm"
+    >
+      <input type="text" name="entry.40609722" id="make" placeholder="make" />
+      <input
+        type="text"
+        name="entry.1281760678"
+        id="model"
+        placeholder="model"
+      />
+      <input type="text" name="entry.1712825003" id="mods" placeholder="mods" />
+      <input
+        type="text"
+        name="entry.1423215431"
+        id="engine"
+        placeholder="engine"
+      />
+      <input
+        type="text"
+        name="entry.1624417641"
+        id="drivetrain"
+        placeholder="drivetrain"
+      />
+      <input
+        type="text"
+        name="entry.618590664"
+        id="suspension"
+        placeholder="suspension"
+      />
+      <input
+        type="text"
+        name="entry.243170770"
+        id="chassis"
+        placeholder="chassis"
+      />
+      <input
+        type="text"
+        name="entry.1365604446"
+        id="aero"
+        placeholder="aerodynamic"
+      />
+      <input
+        type="text"
+        name="entry.128405044"
+        id="tires"
+        placeholder="tires"
+      />
+      <input type="text" name="entry.636352486" id="nafi" placeholder="nafi" />
+      <input
+        type="text"
+        name="entry.413973931"
+        id="firstname"
+        placeholder="firstname"
+      />
+      <input
+        type="text"
+        name="entry.1022827596"
+        id="lastname"
+        placeholder="lastname"
+      />
+      <input type="text" name="entry.44168671" id="email" placeholder="email" />
+      <input
+        type="text"
+        name="entry.1688656240"
+        id="carnumber"
+        placeholder="carnumber"
+      />
+      <input
+        type="text"
+        name="entry.394340936"
+        id="timetrialclass"
+        placeholder="timetrialclass"
+      />
+      <input
+        type="text"
+        name="entry.978014260"
+        id="modpoints"
+        placeholder="modpoints"
+      />
+      <input
+        type="text"
+        name="emailAddress"
+        id="emailAddress"
+        placeholder="email"
+      />
+      <button type="submit">Submit</button>
+    </form>
   </div>
 </template>
 
@@ -317,6 +448,11 @@ export default {
     e6: 1,
     e7: [],
   }),
+  // google form submission
+  email: "",
+  firstName: "",
+  lastName: "",
+  carnumber: "",
   // Max note:
   // I used a new "models" JSON to integrate multiple original data source,
   // now map to the original data definition to fit the existing code.
@@ -421,6 +557,79 @@ export default {
       }
     },
 
+    joinChallenge() {
+      // fill the google form, submit
+      // then navigate to the lightspeed website homepage
+
+      // FIXME:
+      // direct DOM operation should be avoid in vue.js,
+      // however I'm not an expert in vue, I had some issue in variable binding,
+      // and I don't have time to debug on it,
+      // so I hack it this way.
+
+      // identity fields
+      document.querySelector("#email").value = this.email;
+      document.querySelector("#emailAddress").value = this.email;
+      document.querySelector("#firstname").value = this.firstName;
+      document.querySelector("#lastname").value = this.lastName;
+      document.querySelector("#carnumber").value = this.carnumber;
+
+      // simple fields
+      document.querySelector("#make").value = this.carspec.make;
+      document.querySelector("#model").value = this.carspec.model;
+      document.querySelector("#nafi").value = this.carspec.nafi;
+      document.querySelector("#model").value = this.carspec.model;
+      document.querySelector("#timetrialclass").value = this.finalclass;
+      document.querySelector("#modpoints").value = this.score;
+
+      // array fields
+      document.querySelector("#engine").value = this.carspec.engine.join(",");
+      document.querySelector("#suspension").value =
+        this.carspec.suspension.join(",");
+      document.querySelector("#drivetrain").value =
+        this.carspec.drivetrain.join(",");
+      document.querySelector("#chassis").value = this.carspec.chassis.join(",");
+      document.querySelector("#aero").value = this.carspec.areo.join(",");
+      document.querySelector("#tires").value = this.carspec.tires.join(",");
+      // document.querySelector("#weight").value = this.carspec.weight.join(",");
+
+      // composite fields
+      document.querySelector("#mods").value = JSON.stringify(this.carspec);
+
+      // submit the form
+      this.submitGoogleForm();
+    },
+
+    submitGoogleForm(e) {
+      const form = (e && e.target) || document.querySelector("#googleform");
+      const formData = new FormData(form);
+      const url = form.getAttribute("action");
+
+      fetch(url, {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          if (!response.ok) {
+            console.log(response);
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+        })
+        .catch((e) => {
+          // alert("error:" + e.message);
+          console.log("error:", e);
+        })
+        .finally(() => {
+          // FIXME:
+          // http request failed for unknown reason,
+          // ignore it for now see what happens.
+          //
+          // navigate to the lightspeed page
+          const lightspeedUrl = "https://lightspeed.motorsportreg.com/";
+          window.open(lightspeedUrl, "_blank");
+        });
+    },
+
     getModel() {
       return this.model[this.carspec.make];
     },
@@ -462,7 +671,24 @@ export default {
 .v-list-item {
   flex-wrap: wrap;
 }
-.score-panel div {
-  margin: 2rem;
+.score-panel > div {
+  margin: 1rem;
+}
+.challenge hr {
+  margin: 3rem 0 2rem 0;
+}
+.form-group {
+  margin: 1rem 0;
+}
+.form-group label {
+  display: inline-block;
+  width: 100px;
+}
+.form-group input {
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+#googleform {
+  display: none;
 }
 </style>
