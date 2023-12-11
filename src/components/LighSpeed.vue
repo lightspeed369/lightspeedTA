@@ -94,7 +94,7 @@
                 label="Select"
                 multiple
                 small-chips
-                hint="That thing looks legal"
+                hint=""
                 persistent-hint
               ></v-select>
             </v-col>
@@ -109,7 +109,7 @@
                 label="Select"
                 multiple
                 small-chips
-                hint="Pick all your ebay parts"
+                hint=""
                 persistent-hint
               ></v-select>
             </v-col>
@@ -125,7 +125,7 @@
                 label="Select"
                 multiple
                 small-chips
-                hint="Select all parts applied"
+                hint=""
                 persistent-hint
               ></v-select>
             </v-col>
@@ -140,7 +140,7 @@
                 label="Select"
                 multiple
                 small-chips
-                hint="What did you do to your shitbox"
+                hint=""
                 persistent-hint
               ></v-select>
             </v-col>
@@ -156,7 +156,7 @@
                 label="Select"
                 multiple
                 chips
-                hint="Got big Wang?"
+                hint=""
                 persistent-hint
               ></v-select>
             </v-col>
@@ -172,7 +172,7 @@
                 label="Select"
                 multiple
                 chips
-                hint="Cheater Tires"
+                hint=""
                 persistent-hint
               >
                 <template v-slot:item="{ item }">
@@ -202,7 +202,7 @@
                 label="Select"
                 multiple
                 chips
-                hint="Going cheap?"
+                hint=""
                 persistent-hint
               ></v-select>
             </v-col>
@@ -214,9 +214,7 @@
         <v-stepper-step step="4"> View Your Results </v-stepper-step>
         <v-stepper-content step="4">
           <v-banner outlined>
-            If a car accrues 20 or more points it will be bumped up in Class.
-            There is no limit—a car with a high level of modifications might
-            move up several Classes.
+            If a car accumulate 14 or more points it will be bumped up in Class. There is no limit! A car with a high level of modifications might move up several Classes.
           </v-banner>
           <v-simple-table>
             <template v-slot:default>
@@ -234,20 +232,6 @@
               </tbody>
             </template>
           </v-simple-table>
-          <v-banner outlined>
-            FORCED INDUCTION VEHICLES will add an additional five (+5) points to
-            the total number of Modification Points to determine the final
-            competition class.
-          </v-banner>
-          <v-radio-group
-            inline
-            :class="carspec.nafi == '' ? 'red-label' : ''"
-            label="* Is your vehicle NA or FI?"
-            v-model="carspec.nafi"
-          >
-            <v-radio label="NA" value="NA"></v-radio>
-            <v-radio label="FI" value="FI"></v-radio>
-          </v-radio-group>
           <v-dialog transition="dialog-top-transition" max-width="600">
             <template v-slot:activator="{ on, attrs }">
               <v-btn @click="reloadPage" text> Reset </v-btn>
@@ -256,7 +240,6 @@
                 v-bind="attrs"
                 v-on="on"
                 @click="calculateScore"
-                :disabled="carspec.nafi == ''"
                 >View Score</v-btn
               >
               <v-btn color="secondary" @click="e6 = 3"> Back </v-btn>
@@ -312,6 +295,14 @@
                           type="text"
                           v-model="carnumber"
                           required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="submit-team">Team</label>
+                        <input
+                          id="submit-team"
+                          type="text"
+                          v-model="team"
                         />
                       </div>
                       <br />
