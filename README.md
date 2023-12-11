@@ -28,5 +28,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 remove dist folder from .gitignore, then:
 ```
 git add dist
+git commit -m "add new deploy"
 git subtree push --prefix dist origin gh-pages
 ```
