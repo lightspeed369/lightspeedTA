@@ -180,7 +180,7 @@
                     inline
                     :input-value="carspec.tires.includes(item)"
                     class="tire-item-template-checkbox"
-                    :label="`${item} (${scoreLookupTable.tires[item]})`"
+                    :label="`${item}`"
                     :messages="
                       item == 'SUPER 200TW'
                         ? 'SUPER 200TW LIST: CR1/S, RT660, A052, SUR4G, V730, Rival S1.5, RE71-R/RS, GY SC3, Continental ECF, Dir ZIII, 494RS-RR, Michelin cup2 connect.'
@@ -415,6 +415,13 @@
         placeholder="tires"
         v-model="googleformTires"
       />
+      <textarea
+        type="text"
+        name="entry.581053342"
+        id="weight"
+        placeholder="weightSavings"
+        v-model="googleformWeight"
+      />
       <input
         type="text"
         name="entry.636352486"
@@ -449,6 +456,13 @@
         id="carnumber"
         placeholder="carnumber"
         v-model="carnumber"
+      />
+      <input
+        type="text"
+        name="entry.287944984"
+        id="team"
+        placeholder="team"
+        v-model="team"
       />
       <input
         type="text"
@@ -505,6 +519,7 @@ export default {
     firstName: "",
     lastName: "",
     carnumber: "",
+    team: "",
     googleFormSubmitted: false,
     googleFormSubmitError: null,
   }),
@@ -638,8 +653,8 @@ export default {
 
       // Getting final car class
       var totalscore = this.score + this.classesScore[this.carclass];
-      var level = parseInt(totalscore / 20);
-      if (level > 7) {
+      var level = parseInt(totalscore / 14);
+      if (level > 5) {
         this.finalclass = "TTX";
       } else {
         this.finalclass = this.classes[level];
