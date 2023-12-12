@@ -9,13 +9,6 @@
   "models": {
     "Acura": {
       "Integra 1.6L ('86-'89)": { "baseClass": "TTE" },
-      "Integra 1.8L (non-VTEC)('90-'93)": { "baseClass": "TTE" },
-      "Integra 1.8L (non-VTEC)('94-'01)": { "baseClass": "TTE" },
-      "Integra GS-R": { "baseClass": "TTE" },
-      "Integra Type-R": { "baseClass": "TTD" },
-      "NSX 3.0L ('91-'96)": { "baseClass": "TTC**" },
-      "NSX": { "baseClass": "TTC**" },
-      "RSX": { "baseClass": "TTE*" },
       "RSX-S": { "baseClass": "TTD" }
     },
     "Alfa Romeo": {
