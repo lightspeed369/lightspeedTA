@@ -6,7 +6,7 @@
   "__classLookupTable": { "deprecated_replaced_by_models": null },
   "__oneStarModel": ["deprecated_replaced_by_models"],
   "__twoStarModel": ["deprecated_replaced_by_models"],
-  "models": {
+ "models": {
     "Acura": {
       "Integra 1.6L ('86-'89)": { "baseClass": "TTS" },
       "Integra 1.8L (non-VTEC)('90-'93)": { "baseClass": "TTS" },
