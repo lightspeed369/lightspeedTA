@@ -101,7 +101,7 @@
     "Honda": {
       "Civic & SI  (Pre-'05)": { "baseClass": "TTS" },
       "Civic & SI  (‘06 -Present)": { "baseClass": "TTS*" },
-      "CTR FK8 & FL5": { "baseClass": "TTD" },
+      "CTR FK8 & FL5": { "baseClass": "TTD*" },
       "S2000 ('00-'08)": { "baseClass": "TTE" },
       "S2000 CR (2.2L)('08)": { "baseClass": "TTE*" }
     },
@@ -142,7 +142,7 @@
       "NB": { "baseClass": "TTS" },
       "NB (mazdaspeed)": { "baseClass": "TTS*" },
       "NC": { "baseClass": "TTS*" },
-      "ND": { "baseClass": "TTS*" }
+      "ND": { "baseClass": "TTE" }
     },
     "Mclaren": {
       "MP4-12C": { "baseClass": "TTA" },
@@ -193,7 +193,7 @@
   "FR-S Coupe ('13-'16)": { "baseClass": "TTS" } },
     "Subaru": {
       "BRZ Coupe ('13-'16)": { "baseClass": "TTS" },
-      "BRZ 2.4": { "baseClass": "TTE" },
+      "BRZ 2.4": { "baseClass": "TTE*" },
       "WRX": { "baseClass": "TTE" },
       "STi": { "baseClass": "TTD" },
     },
@@ -201,7 +201,7 @@
       "MR S/2": { "baseClass": "TTS" },
       "Supra 3.0": { "baseClass": "TTC" },
       "Supra 2.0": { "baseClass": "TTD" },
-      "GR 86 2.4": { "baseClass": "TTE" },
+      "GR 86 2.4": { "baseClass": "TTE*" },
       "GR Corolla": { "baseClass": "TTC" }
     },
     "Tesla": {
