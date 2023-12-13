@@ -250,7 +250,7 @@
   ],
   "tires": [
     "140-200TW (2)",
-    "100 and lower TW (2)",
+    "100 and lower TW (5)",
     "Racing/DOT Slicks (14)"
   ],
   "weight": [
