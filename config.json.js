@@ -234,43 +234,46 @@
     "Lowering Springs (1)",
     "Aftermarket Front Swaybar (1)",
     "Aftermarket Rear Swaybar (1)",
-    "Aftermarket Front Control arms (1)",
-    "Aftermarket Rear Control arms (1)",
-    "Coilover 1-Way (4)",
-    "Coilover 2-Way (6)",
+    "Aftermarket Front Control arms (2)",
+    "Aftermarket Rear Control arms (2)",
+    "Coilover 1-Way (3)",
+    "Coilover 2-Way (5)",
     "Coilover 3-Way (7)"
   ],
   "chassis": [
     "Big Brake Kit (2)"
   ],
   "areo": [
-    "Front Aero (Spliter, Airdam, and/or Canards (4)",
-    "Rear Aero (Wing, Diffuser and etc) (6)",
+    "Front Aero (Spliter, Airdam, and/or Canards (3)",
+    "Rear Aero (Wing, Diffuser and etc) (5)",
     "Add or fabricate flat bottom/belly tray (5)"
   ],
   "tires": [
-    "140-200TW (6)",
-    "100 and lower TW (10)",
+    "140-200TW (2)",
+    "100 and lower TW (2)",
     "Racing/DOT Slicks (14)"
   ],
   "weight": [
     "Interior weight reduction (Applies even if you remove single component. Excluding Driver Bucket seat/Steering wheel) (4)",
-    "Exterior weight reduction (Applies even if you remove single component.) (4)"
+    "Exterior weight reduction (Applies even if you remove single component) (4)"
   ],
   "classesScore": {
-    "TTX": 70,
-    "TTA": 56,
-    "TTB": 42,
-    "TTC": 28,
-    "TTD": 14,
+    "TTX": 84,
+    "TTA": 70,
+    "TTB": 56,
+    "TTC": 42,
+    "TTD": 28,
+    "TTE": 14,
     "TTS": 0
   },
-  "classes": ["TTS", "TTD", "TTC", "TTB", "TTA", "TTX"],
+  "classes": ["TTS", "TTE", "TTD", "TTC", "TTB", "TTA", "TTX"],
   "categories": [
     { "name": "Move up 1 class", "score": "14 - 27 points" },
     { "name": "Move up 2 class", "score": "28 - 41 points" },
     { "name": "Move up 3 class", "score": "42 - 55 points" },
-    { "name": "Move up 4 class", "score": "56 - 69 points" }
+    { "name": "Move up 4 class", "score": "56 - 69 points" },
+    { "name": "Move up 5 class", "score": "70 - 83 points" },
+    { "name": "Move up 6 class", "score": "84 - 99 points" }
   ],
   "scoreLookupTable": {
     "engine": {
@@ -291,28 +294,28 @@
       "Lowering Springs (1)": 1,
       "Aftermarket Front Swaybar (1)": 1,
       "Aftermarket Rear Swaybar (1)": 1,
-      "Aftermarket Front Control arms (1)": 1,
-      "Aftermarket Rear Control arms (1)": 1,
-      "Coilover 1-Way (4)": 4,
-      "Coilover 2-Way (6)": 6,
+      "Aftermarket Front Control arms (2)": 2,
+      "Aftermarket Rear Control arms (2)": 2,
+      "Coilover 1-Way (3)": 3,
+      "Coilover 2-Way (5)": 5,
       "Coilover 3-Way (7)": 7
     },
     "chassis": {
       "Big Brake Kit (2)": 2
     },
     "areo": {
-      "Front Aero (Spliter, Airdam, and/or Canards (4)": 4,
+      "Front Aero (Spliter, Airdam, and/or Canards (3)": 3,
       "Add or fabricate flat bottom/belly tray (5)": 5,
-      "Rear Aero (Wing, Diffuser and etc) (6)": 6
+      "Rear Aero (Wing, Diffuser and etc) (5)": 5
     },
     "tires": {
-      "140-200TW (6)": 6,
-      "100 and lower TW (10)": 10,
+      "140-200TW (2)": 2,
+      "100 and lower TW (5)": 5,
       "Racing/DOT Slicks (14)": 14
     },
     "weight": {
       "Interior weight reduction (Applies even if you remove single component. Excluding Driver Bucket seat/Steering wheel) (4)": 4,
-      "Exterior weight reduction (Applies even if you remove single component.) (4)": 4
+      "Exterior weight reduction (Applies even if you remove single component) (4)": 4
     }
   }
 }))(window);
