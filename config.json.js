@@ -49,7 +49,7 @@
       "F8x Non M": { "baseClass": "TTS*" },
       "G8x Non M": { "baseClass": "TTE" },
       "G8x M240/M340/M440": { "baseClass": "TTC" },
-      "M235i": { "baseClass": "TTE" },
+      "M235i/M240i": { "baseClass": "TTE*" },
     },
     "Cadillac": {
       "ATSV": { "baseClass": "TTC" },
@@ -176,18 +176,18 @@
       "996": { "baseClass": "TTC" },
       "997": { "baseClass": "TTC" },
       "997 GT3": { "baseClass": "TTB" },
-      "997 Turbo AWD": { "baseClass": "TTB" },
+      "997 Turbo": { "baseClass": "TTB" },
       "997 GT3 RS": { "baseClass": "TTA" },
       "991 All Models": { "baseClass": "TTB" },
       "991 GT3": { "baseClass": "TTA" },
       "991 GT3RS, GT2RS": { "baseClass": "TTX" },
       "992 All Models": { "baseClass": "TTB" },
       "992 GT3 & RS": { "baseClass": "TTX" },
-      "981/982/718": { "baseClass": "TTC" },
+      "981/982 Cayman/Boxster": { "baseClass": "TTC" },
       "981/982/718 GT4 & GTS": { "baseClass": "TTC*" },
-      "981/982": { "baseClass": "TTD" },
+      "986/987 Cayman/Boxster": { "baseClass": "TTD" },
       "Cayman GT4 RS": { "baseClass": "TTA" },
-      "Cayman R 3.4L": { "baseClass": "TTD" }
+      "Cayman R 3.4L": { "baseClass": "TTD*" }
     },
 "Scion": {
   "FR-S Coupe ('13-'16)": { "baseClass": "TTS" } },
