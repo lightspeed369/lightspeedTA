@@ -306,16 +306,17 @@
     "areo": {
       "Front Aero (Spliter, Airdam, and/or Canards (3)": 3,
       "Add or fabricate flat bottom/belly tray (5)": 5,
-      "Rear Aero (Wing, Diffuser and etc) (5)": 5
+      "Rear Aero (Wing, Diffuser, ducktail and etc) (5)": 5
     },
     "tires": {
+      "Original OEM equipped tires (0)": 0,
       "140-200TW (2)": 2,
       "100 and lower TW (5)": 5,
       "Racing/DOT Slicks (14)": 14
     },
     "weight": {
-      "Interior weight reduction (Applies even if you remove single component. Excluding Driver Bucket seat/Steering wheel) (4)": 4,
-      "Exterior weight reduction (Applies even if you remove single component) (4)": 4
+      "Interior weight reduction (Applies even if a single component is removed/replaced with a Non-OEM intended part. Excluding Driver Bucket seat/Steering wheel) (4)": 4,
+      "Exterior weight reduction (Applies even if a single component is removed/replaced with a Non-OEM intended part) (4)": 4
     }
   }
 }))(window);
