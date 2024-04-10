@@ -244,8 +244,8 @@
     "Big Brake Kit (2)"
   ],
   "areo": [
-    "OEM Aero (Aero components come from Manufacturer or OEM optioned (0)",
-    "Front Aero (Spliter, Airdam, and/or Canards (3)",
+    "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)",
+    "Front Aero (Spliter, Airdam, and/or Canards) (3)",
     "Rear Aero (Wing, Diffuser, ducktail and etc) (5)",
     "Add or fabricate flat bottom/belly tray (5)"
   ],
@@ -306,8 +306,8 @@
       "Big Brake Kit (2)": 2
     },
     "areo": {
-      "OEM Aero (Aero components come from Manufacturer or OEM optioned (0)": 0,
-      "Front Aero (Spliter, Airdam, and/or Canards (3)": 3,
+      "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)": 0,
+      "Front Aero (Spliter, Airdam, and/or Canards) (3)": 3,
       "Add or fabricate flat bottom/belly tray (5)": 5,
       "Rear Aero (Wing, Diffuser, ducktail and etc) (5)": 5
     },
