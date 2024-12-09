@@ -27,7 +27,7 @@
       "TT RS ": { "baseClass": "TTC" },
       "TT": { "baseClass": "TTD" },
       "R8 (v8)": { "baseClass": "TTC" },
-      "R8 (v10)": { "baseClass": "TTC*" }
+      "R8 (v10)": { "baseClass": "TTB" }
     },
     "BMW": {
       "M3 (E30)": { "baseClass": "TTE" },
@@ -153,7 +153,7 @@
       "Senna": { "baseClass": "TTX" }
     },
     "Mercedes": {
-      "CLA45 AMG": { "baseClass": "TTC" },
+      "CLA45 AMG": { "baseClass": "TTD*" },
       "C63 S AMG": { "baseClass": "TTC*" },
       "C63 AMG": { "baseClass": "TTC" },
       "AMG GT R Black Series": { "baseClass": "TTX" },
