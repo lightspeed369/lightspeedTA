@@ -184,7 +184,8 @@
       "992 All Models": { "baseClass": "TTB" },
       "992 GT3 & RS": { "baseClass": "TTX" },
       "981/982 Cayman/Boxster": { "baseClass": "TTC" },
-      "981/982/718 GT4 & GTS": { "baseClass": "TTC*" },
+      "981/982/718 GTS": { "baseClass": "TTC" },
+      "981/982/718 GT4": { "baseClass": "TTC*" },
       "986/987 Cayman/Boxster": { "baseClass": "TTD" },
       "Cayman GT4 RS": { "baseClass": "TTA" },
       "Cayman R 3.4L": { "baseClass": "TTD*" }
@@ -217,47 +218,54 @@
     }
   },
   "engine": [
-    "Aftermarket Air Intake (2)",
+    "Aftermarket Air Intake (1)",
     "Cat-back Exhaust  (2)",
-    "Header/Downpipe  (3)",
+    "Header/Downpipe  (2)",
     "Removal of Catalytic Converter  (3)",
     "Aftermarket Turbocharger/Supercharger  (5)",
-    "Piggyback Tuner/Chip  (5)",
     "NA Vehicle ECU Tuning  (3)",
-    "FI Vehicle ECU Tuning  (7)"
+    "FI Vehicle ECU Tuning  (6)"
   ],
-  "drivetrain": [
+  "drivetrain & chassis": [
+    "Aftermarket driveshaft (1)",
     "Aftermarket LSD  (2)",
-    "Modification/upgrade from a fixed to a floating rear axle (3)"
+    "Paragon Performance BBK  (0)",
+    "Big Brake Kit (2)"
   ],
   "suspension": [
     "Lowering Springs (1)",
-    "Aftermarket Front Swaybar (1)",
-    "Aftermarket Rear Swaybar (1)",
-    "Aftermarket Front Control arms (2)",
-    "Aftermarket Rear Control arms (2)",
+    "Aftermarket or modified Front Swaybar (1)",
+    "Aftermarket or modified Rear Swaybar (1)",
+    "Aftermarket Front suspension arms (ie. control arm, toe arm, upper/lower trailing arm) (2)",
+    "Aftermarket Rear suspension arms(ie. control arm, toe arm, upper/lower trailing arm) (2)",
     "Coilover 1-Way (3)",
-    "Coilover 2-Way (5)",
-    "Coilover 3-Way (7)"
+    "Coilover 2-Way (4)",
+    "Coilover 3-Way (5)",
+    "Coilover 4-Way (6)",
   ],
-  "chassis": [
-    "Big Brake Kit (2)"
-  ],
-  "areo": [
+  "areodynamic": [
     "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)",
-    "Front Aero (Spliter, Airdam, and/or Canards) (3)",
-    "Rear Aero (Wing, Diffuser, ducktail and etc) (5)",
-    "Add or fabricate flat bottom/belly tray (5)"
+    "Front Aero (Extended front lip, Spliter, Airdam, Non OEM hood vents, Canards,) (3)",
+    "Rear Aero A (Non-OEM Wing, Spoiler, ducktail and etc) (3)",
+    "Rear Aero B (Non-OEM Diffuser, Flat Bottom) (1)"
   ],
   "tires": [
     "Original OEM equipped tires (0)",
     "140-200TW (2)",
-    "100 and lower TW (5)",
-    "Racing/DOT Slicks (14)"
+    "Super 200TW (A052,CRS V2,Hoosier TrackAttack) (3)",
+    "40-100TW (5)",
+    "Non DOT Slicks (10)"
   ],
   "weight": [
-    "Interior weight reduction (Applies even if a single component is removed/replaced with a Non-OEM intended part. Excluding Driver Bucket seat/Steering wheel) (4)",
-    "Exterior weight reduction (Applies even if a single component is removed/replaced with a Non-OEM intended part) (4)"
+    "Interior A (Door panel, roof liner, heater core, trim panel) (1)",
+    "Interior B (carpet, dashboard) (1)",
+    "Interior C (Seats, Belts, Airbag. Excl. Driver bucket seat, Must be FIA Approved) (2)",
+    "Exterior A (Removal or replace OEM body panel with non OEM intended replacement. ie. carbon fiber replacements) (1)",
+    "Exterior B (Removal of convertible tops, No point if a hardtop is in place) (1)",
+    "Exterior C (Sunroof/moonroof delete) (1)",
+    "Exterior D (lexan glass, Excel. Hardtop glass) (1)",
+    "Roll Bar 4 points or less (-1)",
+    "Roll Bar 6 points or more (-2)"
   ],
   "classesScore": {
     "TTX": 84,
@@ -279,47 +287,54 @@
   ],
   "scoreLookupTable": {
     "engine": {
-      "Aftermarket Air Intake (2)": 2,
-      "Cat-back Exhaust  (2)": 2,
-      "Header/Downpipe  (3)": 3,
+      "Aftermarket Air Intake (1)": 1,
+      "Cat-back Exhaust  (2)": 1,
+      "Header/Downpipe  (2)": 2,
       "Removal of Catalytic Converter  (3)": 3,
       "Aftermarket Turbocharger/Supercharger  (5)": 5,
-      "Piggyback Tuner/Chip  (5)": 5,
       "NA Vehicle ECU Tuning  (3)": 3,
-      "FI Vehicle ECU Tuning  (7)": 7
+      "FI Vehicle ECU Tuning  (6)": 6
     },
-    "drivetrain": {
-      "Aftermarket LSD  (2)": 3,
-      "Modification/upgrade from a fixed to a floating rear axle (3)": 3
+    "drivetrain & chassis": {
+      "Aftermarket driveshaft (1)": 1,
+      "Aftermarket LSD  (2)": 2,
+      "Paragon Performance BBK  (0)": 0,
+      "Big Brake Kit (2)": 2
     },
     "suspension": {
       "Lowering Springs (1)": 1,
-      "Aftermarket Front Swaybar (1)": 1,
-      "Aftermarket Rear Swaybar (1)": 1,
-      "Aftermarket Front Control arms (2)": 2,
-      "Aftermarket Rear Control arms (2)": 2,
+      "Aftermarket or modified Front Swaybar (1)": 1,
+      "Aftermarket or modified Rear Swaybar (1)": 1,
+      "Aftermarket Front suspension arms (ie. control arm, toe arm, upper/lower trailing arm) (2)": 2,
+      "Aftermarket Rear suspension arms(ie. control arm, toe arm, upper/lower trailing arm) (2)": 2,
       "Coilover 1-Way (3)": 3,
-      "Coilover 2-Way (5)": 5,
-      "Coilover 3-Way (7)": 7
-    },
-    "chassis": {
-      "Big Brake Kit (2)": 2
+      "Coilover 2-Way (4)": 4,
+      "Coilover 3-Way (5)": 5,
+      "Coilover 4-Way (6)": 6,
     },
     "areo": {
       "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)": 0,
-      "Front Aero (Spliter, Airdam, and/or Canards) (3)": 3,
-      "Add or fabricate flat bottom/belly tray (5)": 5,
-      "Rear Aero (Wing, Diffuser, ducktail and etc) (5)": 5
+      "Front Aero (Extended front lip, Spliter, Airdam, Non OEM hood vents, Canards,) (3)": 3,
+      "Rear Aero A (Non-OEM Wing, Spoiler, ducktail and etc) (3)": 3,
+      "Rear Aero B (Non-OEM Diffuser, Flat Bottom) (1)": 1
     },
     "tires": {
       "Original OEM equipped tires (0)": 0,
       "140-200TW (2)": 2,
-      "100 and lower TW (5)": 5,
-      "Racing/DOT Slicks (14)": 14
+      "Super 200TW (A052,CRS V2,Hoosier TrackAttack) (3)": 3,
+      "40-100TW (5)": 5,
+      "Non DOT Slicks (10)": 10
     },
     "weight": {
-      "Interior weight reduction (Applies even if a single component is removed/replaced with a Non-OEM intended part. Excluding Driver Bucket seat/Steering wheel) (4)": 4,
-      "Exterior weight reduction (Applies even if a single component is removed/replaced with a Non-OEM intended part) (4)": 4
+      "Interior A (Door panel, roof liner, heater core, trim panel) (1)": 0,
+      "Interior B (carpet, dashboard) (1)": 1,
+      "Interior C (Seats, Belts, Airbag. Excl. Driver bucket seat, Must be FIA Approved) (2)": 2,
+      "Exterior A (Removal or replace OEM body panel with non OEM intended replacement. ie. carbon fiber replacements) (1)": 1,
+      "Exterior B (Removal of convertible tops, No point if a hardtop is in place) (1)": 1,
+      "Exterior C (Sunroof/moonroof delete) (1)": 1,
+      "Exterior D (lexan glass, Excel. Hardtop glass) (1)": 1,
+      "Roll Bar 4 points or less (-1)": 1,
+      "Roll Bar 6 points or more (-2)": 1
     }
   }
 }))(window);
