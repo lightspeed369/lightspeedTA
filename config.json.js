@@ -246,7 +246,7 @@
     "Paragon Performance BBK  (0)",
     "Big Brake Kit (2)"
   ],
-  "aero": [
+  "areo": [
     "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)",
     "Front Aero (Extended front lip, Spliter, Airdam, Non OEM hood vents, Canards,) (3)",
     "Rear Aero A (Non-OEM Wing, Spoiler, ducktail and etc) (3)",
@@ -313,7 +313,7 @@
       "Coilover 3-Way (5)": 5,
       "Coilover 4-Way (6)": 6,
     },
-    "aero": {
+    "areo": {
       "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)": 0,
       "Front Aero (Extended front lip, Spliter, Airdam, Non OEM hood vents, Canards,) (3)": 3,
       "Rear Aero A (Non-OEM Wing, Spoiler, ducktail and etc) (3)": 3,
