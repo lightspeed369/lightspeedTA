@@ -229,7 +229,6 @@
   "drivetrain": [
     "Aftermarket driveshaft (1)",
     "Aftermarket LSD  (2)",
-
   ],
   "suspension": [
     "Lowering Springs (1)",
@@ -291,7 +290,7 @@
   "scoreLookupTable": {
     "engine": {
       "Aftermarket Air Intake (1)": 1,
-      "Cat-back Exhaust  (2)": 1,
+      "Cat-back Exhaust  (2)": 2,
       "Header/Downpipe  (2)": 2,
       "Removal of Catalytic Converter  (3)": 3,
       "Aftermarket Turbocharger/Supercharger  (5)": 5,
@@ -338,8 +337,8 @@
       "Exterior B (Removal of convertible tops, No point if a hardtop is in place) (1)": 1,
       "Exterior C (Sunroof/moonroof delete) (1)": 1,
       "Exterior D (lexan glass, Excel. Hardtop glass) (1)": 1,
-      "Roll Bar 4 points or less (-1)": 1,
-      "Roll Bar 6 points or more (-2)": 1
+      "Roll Bar 4 points or less (-1)": -1,
+      "Roll Bar 6 points or more (-2)": -2
     }
   }
 }))(window);
