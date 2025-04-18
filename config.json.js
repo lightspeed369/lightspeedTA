@@ -242,7 +242,6 @@
     "Coilover 4-Way (6)"
   ],
   "chassis": [
-    "Paragon Performance BBK  (0)",
     "Big Brake Kit (2)"
   ],
   "aero": [
@@ -313,7 +312,6 @@
       "Coilover 4-Way (6)": 6
     },
     "chassis": {
-    "Paragon Performance BBK  (0)",
     "Big Brake Kit (2)"
     },
     "aero": {
