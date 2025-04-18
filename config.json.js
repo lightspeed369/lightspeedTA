@@ -49,7 +49,7 @@
       "F8x Non M": { "baseClass": "TTS*" },
       "G8x Non M": { "baseClass": "TTE" },
       "G8x M240/M340/M440": { "baseClass": "TTC" },
-      "M235i/M240i": { "baseClass": "TTE*" },
+      "M235i/M240i": { "baseClass": "TTE*" }
     },
     "Cadillac": {
       "ATSV": { "baseClass": "TTC" },
@@ -66,7 +66,6 @@
       "Corvetts C5/C6": { "baseClass": "TTC" },
       "Corvetts C6 Z06 & GS": { "baseClass": "TTC*" },
       "Corvetts C7 Z06": { "baseClass": "TTB*" },
-      "Corvetts C5/C6": { "baseClass": "TTC" },
       "Corvetts C6 Z06 & GS": { "baseClass": "TTC*" },
       "Corvetts C7 Base/Z51/GS ": { "baseClass": "TTB" },
       "Corvetts C7 Z06": { "baseClass": "TTB*" },
@@ -196,7 +195,7 @@
       "BRZ Coupe ('13-'16)": { "baseClass": "TTS" },
       "BRZ 2.4": { "baseClass": "TTE*" },
       "WRX": { "baseClass": "TTE" },
-      "STi": { "baseClass": "TTD" },
+      "STi": { "baseClass": "TTD" }
     },
     "Toyota": {
       "MR S/2": { "baseClass": "TTS" },
@@ -228,7 +227,7 @@
   ],
   "drivetrain": [
     "Aftermarket driveshaft (1)",
-    "Aftermarket LSD  (2)",
+    "Aftermarket LSD  (2)"
 
   ],
   "suspension": [
@@ -240,13 +239,13 @@
     "Coilover 1-Way (3)",
     "Coilover 2-Way (4)",
     "Coilover 3-Way (5)",
-    "Coilover 4-Way (6)",
+    "Coilover 4-Way (6)"
   ],
   "chassis": [
     "Paragon Performance BBK  (0)",
     "Big Brake Kit (2)"
   ],
-  "areo": [
+  "aero": [
     "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)",
     "Front Aero (Extended front lip, Spliter, Airdam, Non OEM hood vents, Canards,) (3)",
     "Rear Aero A (Non-OEM Wing, Spoiler, ducktail and etc) (3)",
@@ -300,7 +299,7 @@
     },
     "drivetrain": {
       "Aftermarket driveshaft (1)": 1,
-      "Aftermarket LSD  (2)": 2,
+      "Aftermarket LSD  (2)": 2
     },
     "suspension": {
       "Lowering Springs (1)": 1,
@@ -311,9 +310,9 @@
       "Coilover 1-Way (3)": 3,
       "Coilover 2-Way (4)": 4,
       "Coilover 3-Way (5)": 5,
-      "Coilover 4-Way (6)": 6,
+      "Coilover 4-Way (6)": 6
     },
-    "areo": {
+    "aero": {
       "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)": 0,
       "Front Aero (Extended front lip, Spliter, Airdam, Non OEM hood vents, Canards,) (3)": 3,
       "Rear Aero A (Non-OEM Wing, Spoiler, ducktail and etc) (3)": 3,
