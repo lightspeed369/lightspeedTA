@@ -66,8 +66,9 @@
       "Corvetts C5/C6": { "baseClass": "TTC" },
       "Corvetts C6 Z06 & GS": { "baseClass": "TTC*" },
       "Corvetts C7 Z06": { "baseClass": "TTB*" },
+      "Corvetts C5/C6": { "baseClass": "TTC" },
       "Corvetts C6 Z06 & GS": { "baseClass": "TTC*" },
-      "Corvetts C7 Base/Z51/GS ": { "baseClass": "TTB" },
+      "Corvetts C7 ": { "baseClass": "TTB" },
       "Corvetts C7 Z06": { "baseClass": "TTB*" },
       "Corvetts C7 ZR1": { "baseClass": "TTA" },
       "Corvetts C8 (inc. Z51)": { "baseClass": "TTB" },
@@ -195,7 +196,7 @@
       "BRZ Coupe ('13-'16)": { "baseClass": "TTS" },
       "BRZ 2.4": { "baseClass": "TTE*" },
       "WRX": { "baseClass": "TTE" },
-      "STi": { "baseClass": "TTD" }
+      "STi": { "baseClass": "TTD" },
     },
     "Toyota": {
       "MR S/2": { "baseClass": "TTS" },
