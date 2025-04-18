@@ -130,6 +130,7 @@
       "Evora 400": { "baseClass": "TTC" },
       "Emira": { "baseClass": "TTC" },
       "Exige ": { "baseClass": "TTC" }
+      "Emira ": { "baseClass": "TTC" }
     },
     "Maserati": { "GranTurismo": { "baseClass": "TTD" } },
     "Mazda": {
