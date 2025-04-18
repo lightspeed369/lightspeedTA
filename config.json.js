@@ -68,7 +68,7 @@
       "Corvetts C7 Z06": { "baseClass": "TTB*" },
       "Corvetts C5/C6": { "baseClass": "TTC" },
       "Corvetts C6 Z06 & GS": { "baseClass": "TTC*" },
-      "Corvetts C7 ": { "baseClass": "TTB" },
+      "Corvetts C7 Base/Z51/GS ": { "baseClass": "TTB" },
       "Corvetts C7 Z06": { "baseClass": "TTB*" },
       "Corvetts C7 ZR1": { "baseClass": "TTA" },
       "Corvetts C8 (inc. Z51)": { "baseClass": "TTB" },
