@@ -49,7 +49,7 @@
       "F8x Non M": { "baseClass": "TTS*" },
       "G8x Non M": { "baseClass": "TTE" },
       "G8x M240/M340/M440": { "baseClass": "TTC" },
-      "M235i/M240i": { "baseClass": "TTE*" }
+      "M235i/M240i": { "baseClass": "TTE*" },
     },
     "Cadillac": {
       "ATSV": { "baseClass": "TTC" },
@@ -227,7 +227,7 @@
   ],
   "drivetrain": [
     "Aftermarket driveshaft (1)",
-    "Aftermarket LSD  (2)"
+    "Aftermarket LSD  (2)",
 
   ],
   "suspension": [
@@ -239,12 +239,13 @@
     "Coilover 1-Way (3)",
     "Coilover 2-Way (4)",
     "Coilover 3-Way (5)",
-    "Coilover 4-Way (6)"
+    "Coilover 4-Way (6)",
   ],
   "chassis": [
+    "Paragon Performance BBK  (0)",
     "Big Brake Kit (2)"
   ],
-  "aero": [
+  "areo": [
     "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)",
     "Front Aero (Extended front lip, Spliter, Airdam, Non OEM hood vents, Canards,) (3)",
     "Rear Aero A (Non-OEM Wing, Spoiler, ducktail and etc) (3)",
@@ -298,7 +299,7 @@
     },
     "drivetrain": {
       "Aftermarket driveshaft (1)": 1,
-      "Aftermarket LSD  (2)": 2
+      "Aftermarket LSD  (2)": 2,
     },
     "suspension": {
       "Lowering Springs (1)": 1,
@@ -309,12 +310,9 @@
       "Coilover 1-Way (3)": 3,
       "Coilover 2-Way (4)": 4,
       "Coilover 3-Way (5)": 5,
-      "Coilover 4-Way (6)": 6
+      "Coilover 4-Way (6)": 6,
     },
-    "chassis": {
-    "Big Brake Kit (2)"
-    },
-    "aero": {
+    "areo": {
       "OEM Aero (Aero components come from Manufacturer or OEM optioned) (0)": 0,
       "Front Aero (Extended front lip, Spliter, Airdam, Non OEM hood vents, Canards,) (3)": 3,
       "Rear Aero A (Non-OEM Wing, Spoiler, ducktail and etc) (3)": 3,
