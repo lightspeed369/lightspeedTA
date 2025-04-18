@@ -129,7 +129,7 @@
       "Evora": { "baseClass": "TTE*" },
       "Evora 400": { "baseClass": "TTC" },
       "Emira": { "baseClass": "TTC" },
-      "Exige ": { "baseClass": "TTC" }
+      "Exige ": { "baseClass": "TTC" },
       "Emira ": { "baseClass": "TTC" }
     },
     "Maserati": { "GranTurismo": { "baseClass": "TTD" } },
@@ -184,6 +184,7 @@
       "992 All Models": { "baseClass": "TTB" },
       "992 GT3 & RS": { "baseClass": "TTX" },
       "981/982 Cayman/Boxster": { "baseClass": "TTD" },
+      "981/982 Cayman/Boxster S": { "baseClass": "TTD*" },
       "981/982/718 GTS": { "baseClass": "TTC" },
       "981/982/718 GT4": { "baseClass": "TTC*" },
       "986/987 Cayman/Boxster": { "baseClass": "TTD" },
